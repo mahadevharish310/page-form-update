@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word Counter</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
+    <script src="demo.js"></script>
   </head>
   <body>
-    <p>Click me!</p>
-    <input type="text">
+    <form action="">
+      <div class="control">
+        <label for="product-name">Product name</label>
+        <input
+          type="text"
+          id="product-name"
+          name="product-name"
+          maxlength="30"
+        />
+        <span id="charcount"> <span id="remaining-chars">30</span>/30 </span>
+      </div>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
